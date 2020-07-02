@@ -52,9 +52,8 @@ function pairing($queue1, $queue2)
         $b = $queue2->shift();
         array_push($list, $a);
         array_push($list, $b);
-    } else {
-        return "Khong co cap doi";
     }
+
     return $list;
 }
 
@@ -76,9 +75,8 @@ echo "</pre>";
 echo "<pre>";
 var_dump(pairing($queue1, $queue2));
 echo "</pre>";
-echo "<pre>";
-var_dump(pairing($queue1, $queue2));
-echo "</pre>";
+
+
 
 
 print_r(queue($queue1,$queue2));
